@@ -12,10 +12,12 @@ import "math"
 
 type NumberOFSides int
 
+const SidesTriangle NumberOFSides = 3
+const SidesSquare NumberOFSides = 4
+const SidesCircle NumberOFSides = 0
+
 func CalcSquare(sideLen float64, sidesNum NumberOFSides) float64 {
-	const SidesTriangle NumberOFSides = 3
-	const SidesSquare NumberOFSides = 4
-	const SidesCircle NumberOFSides = 0
+
 	pi := math.Pi
 
 	switch {
